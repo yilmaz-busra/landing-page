@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbar {
+  background-color: #262626;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.title {
+  color: beige;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 15px;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-list {
+  padding: 10px 0;
+  display: flex;
+  list-style-type: none;
+  column-gap: 10px;
+}
+
+.link-style {
+  text-decoration: none;
+  color: beige;
+  font-weight: 600;
+  font-size: 12px;
+}
+.stylink:hover {
+  text-shadow: 1px 0px 1px rgba(245, 245, 220, 0.57);
+}
+
+/*Main sayfa CSS*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+}
+.card-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px auto;
+  align-items: start;
+}
+.card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(168, 168, 168, 0.903) 0px 1px 1px;
+}
+
+.stylebanner {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.stylebanner img {
+  max-width: 100%;
+  height: auto;
+}
+.title-style {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.desc-style {
+  font-size: 9px;
+  margin-top: 5px;
+}
+
+/*FORM CSS*/
+.form-style {
+  background-color: #262626;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.form-card {
+  background-color: #262626;
+  color: beige;
+  padding: 5px;
+}
+
+h1 {
+  color: beige;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+label {
+  color: beige;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: none;
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+button[type="submit"] {
+  background-color: #00b2ff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #007bff;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.footer {
+  padding: 10px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-address,
+.footer-phone {
+  margin-bottom: 10px;
+  color: beige;
+  font-size: 12px;
+}
+
+h4 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: beige;
+}
+
+.socialconnect {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+/*Ekran boyutu  degisim ayarlari*/
+
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    align-items: start;
+  }
+  .card {
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: rgba(168, 168, 168, 0.903) 0px 1px 1px;
+  }
+  .stylebanner {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .stylebanner img {
+    max-width: 100%;
+    height: auto;
+  }
+  .form-style {
+    background-color: #262626;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .form-card {
+    background-color: aqua;
+    background-color: #262626;
+    color: beige;
+
+    padding: 5px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
